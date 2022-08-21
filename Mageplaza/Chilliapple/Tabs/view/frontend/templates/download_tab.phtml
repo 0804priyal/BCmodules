@@ -1,0 +1,9 @@
+<?php
+
+$product = $block->getProduct();
+$productDownloads = str_replace('Download Technical Information (PDF)',__('Download Technical Information (PDF)'),$product->getData('product_downloads'));
+$pdfData = $this->helper('Chilliapple\Tabs\Helper\Data')->getWysiwygFilter()->filter($productDownloads);
+
+?>
+<?php echo $pdfData; ?>
+

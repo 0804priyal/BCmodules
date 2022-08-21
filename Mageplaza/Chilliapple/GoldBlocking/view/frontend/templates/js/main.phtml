@@ -1,0 +1,30 @@
+<?php
+       $quote = $block->getDataFromQuote() ? $block->getDataFromQuote() : '[]';
+    
+    $jsonHelper = $this->helper('\Magento\Framework\Json\Helper\Data');
+
+      $chilliHelper = $this->helper('\Chilliapple\GoldBlocking\Helper\Data'); 
+
+    
+?>
+<script type="text/x-magento-init">
+    {
+        "#require-gold-blocking-container": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "goldblocking": {
+                        "component": "Chilliapple_GoldBlocking/js/goldblocking",
+                        "existingQuote": <?php echo $quote; ?>,
+                        "first_line_text_price" : <?php echo (float)$chilliHelper->getFirstLineTextPrice(); ?>,
+                        "second_line_text_price" : <?php echo (float)$chilliHelper->getSecondLineTextPrice(); ?>,
+                        "third_line_text_price" : <?php echo (float)$chilliHelper->getThirdLineTextPrice(); ?>,
+                        "die_creation_price" : <?php echo (float)$chilliHelper->getDieCreationPrice(); ?>,
+                        "die_imprint_price" : <?php echo (float)$chilliHelper->getDieImprintPrice(); ?>,
+                        "instrument_name_price" : <?php echo (float)$chilliHelper->getInstrumentNamePrice(); ?>
+                    }
+                }
+
+            }
+        }
+    }
+</script>

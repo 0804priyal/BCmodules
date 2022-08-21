@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd"> 
+       
+    <preference for="Rokanthemes\SlideBanner\Block\Adminhtml\Slider\Edit\Tab\Info" type="Chilliapple\ThemeSliderFix\Block\Adminhtml\Slider\Edit\Tab\Info"/>
+    
+    <preference for="Rokanthemes\SlideBanner\Block\Adminhtml\Slider\Grid" type="Chilliapple\ThemeSliderFix\Block\Adminhtml\Slider\Grid"/>
+
+    <preference for="Rokanthemes\SlideBanner\Controller\Adminhtml\Slider\Save" type="Chilliapple\ThemeSliderFix\Controller\Adminhtml\Slider\Save"/>
+
+
+    <preference for="Rokanthemes\SlideBanner\Block\Adminhtml\Slider\Edit\Tabs" type="Chilliapple\ThemeSliderFix\Block\Adminhtml\Slider\Edit\Tabs" />
+
+     <preference for="Rokanthemes\SlideBanner\Block\Slider" type="Chilliapple\ThemeSliderFix\Block\Slider" />
+ <preference for="Rokanthemes\SlideBanner\Block\Adminhtml\Slide\Edit\Tab\Info" type="Chilliapple\ThemeSliderFix\Block\Adminhtml\Slide\Edit\Tab\Info" />
+
+  <preference for="Rokanthemes\SlideBanner\Block\Adminhtml\Slide\Grid" type="Chilliapple\ThemeSliderFix\Block\Adminhtml\Slide\Grid" />
+
+
+</config>
